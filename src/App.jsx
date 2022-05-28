@@ -1,13 +1,14 @@
 import React from 'react'
 import Typography from '@mui/material/Typography'
-import NavBar from './Components/NavBar';
+import ResponsiveAppBar from './Components/ResponsiveAppBar';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { green, purple } from '@mui/material/colors';
+import { green, red } from '@mui/material/colors';
 
 const theme = createTheme({
+  
   palette: {
     primary: {
-      main: purple[500],
+      main: red[500],
     },
     secondary: {
       main: green[500],
@@ -16,13 +17,12 @@ const theme = createTheme({
 });
 
 
-
 function App() {
   return (
     <div>
       <ThemeProvider theme={theme}>
         <Typography variant="body1" color="initial">
-          <NavBar></NavBar>
+          <ResponsiveAppBar></ResponsiveAppBar>
           <Typography variant="h1" color="initial">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur commodi ullam ipsam iusto iure quaerat hic itaque minus cumque quibusdam pariatur quasi maiores, placeat natus doloremque. Nobis sint iure beatae.
           </Typography>
