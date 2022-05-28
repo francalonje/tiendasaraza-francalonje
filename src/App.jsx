@@ -1,6 +1,6 @@
 import React from 'react'
 import Typography from '@mui/material/Typography'
-import ResponsiveAppBar from './Components/ResponsiveAppBar';
+import NavBar from './Components/NavBar';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { green, red } from '@mui/material/colors';
 
@@ -22,7 +22,7 @@ function App() {
     <div>
       <ThemeProvider theme={theme}>
         <Typography variant="body1" color="initial">
-          <ResponsiveAppBar></ResponsiveAppBar>
+          <NavBar></NavBar>
           <Typography variant="h1" color="initial">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur commodi ullam ipsam iusto iure quaerat hic itaque minus cumque quibusdam pariatur quasi maiores, placeat natus doloremque. Nobis sint iure beatae.
           </Typography>
